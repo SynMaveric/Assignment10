@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+function AT() {
+
+    var p1 = document.createTextNode(" Appended text.");
+    var p2 = document.createTextNode(" Appended text.");
+    
+    document.getElementById("p1").appendChild(p1);
+    document.getElementById("p2").appendChild(p2);
+
+}
+</script>
+
+<script>
+function ALI() {
+
+    var Ordered_List = document.createElement("LI");
+    var t = document.createTextNode(" Appended item");
+    Ordered_List.appendChild(t);
+    document.getElementById("l1").appendChild(Ordered_List);
+
+}
+</script>
+
+
+</head>
+
+<body>
+
+<p id="p1">This is a paragraph.</P>
+<p id="p2">This is another paragraph.</p>
+
+<ol id="l1">
+	<li>List item 1</li>
+	<li>List item 2</li>
+	<li>List item 3</li>
+</ol>
+
+<button id="btn1" onclick="AT()">Append text</button>
+<button id="btn2" onclick=" ALI()">Append list items</button>
+
+</body>
+</html>
